@@ -1,0 +1,902 @@
+/* =========================================================
+   ARJUMAND'S PTV SALON
+   PREMIUM TESTIMONIALS SECTION
+   Luxury Editorial / Soft Rose / Cream
+========================================================= */
+
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 130px;
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(224, 184, 195, 0.22),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 75%,
+      rgba(224, 184, 195, 0.18),
+      transparent 25%
+    ),
+    #f8f1ed;
+  color: #38272e;
+}
+
+
+/* =========================================================
+   DECORATIVE BACKGROUND
+========================================================= */
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  top: -260px;
+  right: -180px;
+  border: 1px solid rgba(163, 93, 115, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.testimonials::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 340px;
+  left: -150px;
+  bottom: 120px;
+  background: #efd9df;
+  opacity: 0.4;
+  border-radius: 60% 40% 50% 50%;
+  transform: rotate(25deg);
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.testimonials-container {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.testimonials-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 70px;
+  margin-bottom: 80px;
+}
+
+.testimonials-eyebrow {
+  display: block;
+  margin-bottom: 25px;
+  color: #a15d74;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.testimonials-header h2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #39282e;
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+  font-size:
+    clamp(72px, 8vw, 108px);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -5px;
+}
+
+.testimonials-header h2 em {
+  margin-left: 90px;
+  color: #a25d73;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   GOOGLE SUMMARY
+========================================================= */
+
+.google-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 210px;
+  padding: 14px 20px;
+  border: 1px solid rgba(70, 42, 52, 0.09);
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 15px 40px rgba(76, 45, 57, 0.05);
+}
+
+.google-logo {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #ffffff;
+
+  color: #4285f4;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.google-summary strong {
+  display: block;
+  color: #4b363e;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.google-stars {
+  margin: 4px 0;
+  color: #d09a3c;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.google-summary span {
+  display: block;
+  color: #9b858d;
+  font-size: 6px;
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   FEATURED REVIEW
+========================================================= */
+
+.featured-review {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 90px 1fr 50px;
+  align-items: center;
+  gap: 35px;
+
+  min-height: 335px;
+  margin-bottom: 55px;
+  padding: 55px 65px;
+
+  overflow: hidden;
+
+  border-radius:
+    10px 125px 10px 125px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #a45e76 0%,
+      #99546c 100%
+    );
+
+  color: white;
+
+  box-shadow:
+    0 35px 75px rgba(89, 46, 62, 0.17);
+}
+
+
+/* Decorative rings */
+
+.featured-review::before {
+  content: "";
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  right: -80px;
+  top: -230px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+}
+
+.featured-review::after {
+  content: "";
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  right: 110px;
+  bottom: -150px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.quote-mark {
+  position: relative;
+  z-index: 2;
+
+  color: #efcbd4;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 145px;
+  line-height: 0.65;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   FEATURE CONTENT
+========================================================= */
+
+.featured-review-content {
+  position: relative;
+  z-index: 3;
+}
+
+.review-label {
+  display: block;
+  margin-bottom: 18px;
+
+  color: #f2dbe1;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+}
+
+.featured-review-content p {
+  max-width: 750px;
+  margin: 0;
+
+  color: #fffafc;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(21px, 2.2vw, 29px);
+
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.48;
+}
+
+
+/* =========================================================
+   FEATURE AUTHOR
+========================================================= */
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.author-circle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 14px;
+  font-style: italic;
+}
+
+.review-author strong {
+  display: block;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.review-author span {
+  display: block;
+  margin-top: 4px;
+
+  color: #efdce2;
+  font-size: 6px;
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   FEATURE STAR
+========================================================= */
+
+.featured-star {
+  position: relative;
+  z-index: 3;
+
+  align-self: flex-start;
+
+  color: #f1d5b0;
+  font-size: 24px;
+
+  text-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   REVIEWS GRID
+========================================================= */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+
+/* =========================================================
+   REVIEW CARD
+========================================================= */
+
+.review-card {
+  position: relative;
+
+  min-height: 305px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px;
+
+  border:
+    1px solid rgba(75, 43, 55, 0.08);
+
+  border-radius:
+    8px 58px 8px 8px;
+
+  background:
+    rgba(255, 250, 247, 0.88);
+
+  box-shadow:
+    0 10px 30px rgba(76, 44, 56, 0.035);
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+
+/* Alternate shape */
+
+.review-card:nth-child(2n) {
+  border-radius:
+    58px 8px 8px 8px;
+}
+
+
+/* Highlight first card */
+
+.review-card.highlight {
+  background:
+    linear-gradient(
+      145deg,
+      #fffaf7,
+      #f7e9ed
+    );
+}
+
+
+/* Hover */
+
+.review-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(163, 93, 115, 0.18);
+
+  box-shadow:
+    0 25px 55px rgba(82, 47, 61, 0.1);
+}
+
+
+/* =========================================================
+   REVIEW TOP
+========================================================= */
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(163, 93, 115, 0.12);
+
+  border-radius: 50%;
+
+  background: #f1dde2;
+  color: #9f5c73;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 17px;
+  font-style: italic;
+}
+
+.review-person {
+  flex: 1;
+}
+
+.review-person strong {
+  display: block;
+  color: #46333a;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.review-person span {
+  display: block;
+  margin-top: 3px;
+  color: #a28d94;
+  font-size: 6px;
+}
+
+.google-mini {
+  color: #4285f4;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.review-stars {
+  margin-top: 20px;
+
+  color: #d09a3c;
+
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   REVIEW TEXT
+========================================================= */
+
+.review-card p {
+  flex: 1;
+
+  margin: 18px 0;
+
+  color: #68585f;
+
+  font-size: 10px;
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   REVIEW BOTTOM
+========================================================= */
+
+.review-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  border-top:
+    1px solid rgba(75, 43, 55, 0.08);
+
+  color: #ae969f;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FOOTER CTA
+========================================================= */
+
+.reviews-footer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-top: 85px;
+  padding-top: 40px;
+
+  border-top:
+    1px solid rgba(75, 43, 55, 0.11);
+}
+
+.reviews-footer > div > span {
+  color: #ad8a79;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.reviews-footer h3 {
+  margin: 12px 0 0;
+
+  color: #3f2c33;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(32px, 4vw, 50px);
+
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.reviews-footer h3 em {
+  margin-left: 7px;
+  color: #a25d73;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.review-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px 22px;
+
+  border:
+    1px solid rgba(162, 93, 115, 0.15);
+
+  border-radius: 50px;
+
+  background: #a25d73;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  box-shadow:
+    0 15px 30px rgba(116, 58, 79, 0.13);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.review-button:hover {
+  transform: translateY(-4px);
+
+  background: #8f4d65;
+
+  box-shadow:
+    0 20px 35px rgba(116, 58, 79, 0.18);
+}
+
+.review-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 50%;
+
+  font-size: 13px;
+
+  transition:
+    transform 0.35s ease;
+}
+
+.review-button:hover span {
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .testimonials {
+    padding: 120px 0 100px;
+  }
+
+  .testimonials-header {
+    gap: 40px;
+  }
+
+  .testimonials-header h2 {
+    font-size: 76px;
+  }
+
+  .testimonials-header h2 em {
+    margin-left: 60px;
+  }
+
+  .featured-review {
+    grid-template-columns: 65px 1fr 35px;
+    gap: 25px;
+    padding: 45px;
+  }
+
+  .quote-mark {
+    font-size: 115px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .testimonials {
+    padding: 95px 0 85px;
+  }
+
+  .testimonials-container {
+    width: min(92%, 520px);
+  }
+
+
+  /* HEADER */
+
+  .testimonials-header {
+    display: block;
+    margin-bottom: 55px;
+  }
+
+  .testimonials-eyebrow {
+    margin-bottom: 20px;
+  }
+
+  .testimonials-header h2 {
+    font-size: 61px;
+    line-height: 0.82;
+    letter-spacing: -4px;
+  }
+
+  .testimonials-header h2 em {
+    margin-left: 38px;
+  }
+
+
+  /* GOOGLE */
+
+  .google-summary {
+    width: fit-content;
+    margin-top: 35px;
+    padding: 12px 17px;
+  }
+
+  .google-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  /* FEATURE */
+
+  .featured-review {
+    display: block;
+
+    min-height: auto;
+
+    margin-bottom: 40px;
+    padding: 38px 28px 42px;
+
+    border-radius:
+      8px 75px 8px 75px;
+  }
+
+  .featured-review::before {
+    width: 280px;
+    height: 280px;
+    right: -110px;
+    top: -140px;
+  }
+
+  .quote-mark {
+    font-size: 90px;
+    line-height: 0.6;
+    margin-bottom: 15px;
+  }
+
+  .featured-review-content p {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .review-author {
+    margin-top: 25px;
+  }
+
+  .featured-star {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    font-size: 20px;
+  }
+
+
+  /* GRID */
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .review-card {
+    min-height: 270px;
+    padding: 25px;
+  }
+
+  .review-card p {
+    font-size: 10px;
+    line-height: 1.85;
+  }
+
+
+  /* FOOTER */
+
+  .reviews-footer {
+    display: block;
+    margin-top: 65px;
+    padding-top: 30px;
+  }
+
+  .reviews-footer h3 {
+    max-width: 330px;
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .review-button {
+    width: fit-content;
+    margin-top: 30px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .testimonials {
+    padding: 85px 0 75px;
+  }
+
+  .testimonials-header h2 {
+    font-size: 54px;
+    letter-spacing: -3px;
+  }
+
+  .testimonials-header h2 em {
+    margin-left: 30px;
+    font-size: 51px;
+  }
+
+  .featured-review {
+    padding: 35px 24px 38px;
+    border-radius:
+      7px 60px 7px 60px;
+  }
+
+  .featured-review-content p {
+    font-size: 17px;
+  }
+
+  .quote-mark {
+    font-size: 78px;
+  }
+
+  .review-card {
+    padding: 23px;
+    min-height: 260px;
+  }
+
+  .review-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reviews-footer h3 {
+    font-size: 31px;
+  }
+
+}

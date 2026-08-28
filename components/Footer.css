@@ -1,0 +1,708 @@
+/* =========================================================
+   ARJUMAND'S PTV SALON
+   FOOTER
+========================================================= */
+
+.salon-footer {
+  position: relative;
+  overflow: hidden;
+
+  padding: 100px 0 30px;
+
+  background:
+    radial-gradient(
+      circle at 85% 0%,
+      rgba(214, 145, 166, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #302329 0%,
+      #39292f 50%,
+      #2d2228 100%
+    );
+
+  color: #fff7f8;
+}
+
+
+/* =========================================================
+   DECORATIVE ORBITS
+========================================================= */
+
+.footer-orbit {
+  position: absolute;
+
+  pointer-events: none;
+
+  border: 1px solid
+    rgba(247, 203, 216, 0.08);
+
+  border-radius: 50%;
+}
+
+
+.footer-orbit-one {
+  width: 650px;
+  height: 650px;
+
+  top: -440px;
+  right: -280px;
+}
+
+
+.footer-orbit-two {
+  width: 400px;
+  height: 400px;
+
+  bottom: -270px;
+  left: -180px;
+
+  border-color:
+    rgba(247, 203, 216, 0.05);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.footer-container {
+  position: relative;
+  z-index: 5;
+
+  width: min(1320px, 92%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   TOP GRID
+========================================================= */
+
+.footer-top {
+  display: grid;
+
+  grid-template-columns:
+    1.7fr
+    0.8fr
+    0.9fr
+    1.15fr;
+
+  gap: 65px;
+
+  padding-bottom: 80px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.footer-brand-name {
+  color: #fffafa;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 39px;
+
+  font-weight: 500;
+
+  line-height: 0.9;
+
+  letter-spacing: 1px;
+}
+
+
+.footer-brand-sub {
+  margin-top: 10px;
+
+  color: #d9a0b1;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 4px;
+}
+
+
+.footer-brand p {
+  margin: 28px 0 0;
+
+  color: #a9949b;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.footer-label {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: #d19aaa;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 2.5px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.footer-links {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+
+.footer-links a {
+  position: relative;
+
+  color: #d6c5ca;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 14px;
+
+  line-height: 1.2;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.footer-links a::before {
+  content: "";
+
+  position: absolute;
+
+  left: -17px;
+  top: 50%;
+
+  width: 8px;
+  height: 1px;
+
+  background: #d095a8;
+
+  opacity: 0;
+
+  transform:
+    translateY(-50%)
+    translateX(-5px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.footer-links a:hover {
+  color: #f2ccd7;
+
+  transform: translateX(5px);
+}
+
+
+.footer-links a:hover::before {
+  opacity: 1;
+
+  transform:
+    translateY(-50%)
+    translateX(0);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.footer-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.footer-phone {
+  color: #fff4f6;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 22px;
+
+  line-height: 1.2;
+
+  text-decoration: none;
+}
+
+
+.footer-email {
+  max-width: 100%;
+
+  margin-top: 10px;
+
+  color: #b9a5ac;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.footer-email:hover {
+  color: #efbfcd;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.footer-whatsapp {
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  margin-top: 25px;
+
+  padding-bottom: 8px;
+
+  border-bottom:
+    1px solid
+    rgba(237, 188, 202, 0.35);
+
+  color: #e8b7c5;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.footer-whatsapp span {
+  font-size: 15px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.footer-whatsapp:hover {
+  color: #fff0f4;
+}
+
+
+.footer-whatsapp:hover span {
+  transform:
+    translate(3px, -3px);
+}
+
+
+/* =========================================================
+   LARGE BRAND
+========================================================= */
+
+.footer-big-brand {
+  display: flex;
+
+  align-items: baseline;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  padding: 45px 0 50px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,0.09);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,0.09);
+}
+
+
+.footer-big-brand span {
+  color:
+    rgba(255,248,250,0.10);
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(60px, 11vw, 150px);
+
+  font-weight: 400;
+
+  line-height: 0.8;
+
+  letter-spacing:
+    clamp(-5px, -0.5vw, -2px);
+
+  white-space: nowrap;
+}
+
+
+.footer-big-brand em {
+  color:
+    rgba(214, 148, 169, 0.45);
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(25px, 4vw, 55px);
+
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.footer-bottom {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding-top: 27px;
+}
+
+
+.footer-bottom > span,
+.footer-bottom > a {
+  color: #806d74;
+
+  font-family:
+    "Montserrat",
+    Arial,
+    sans-serif;
+
+  font-size: 6px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 1.8px;
+
+  text-decoration: none;
+}
+
+
+.footer-center-text {
+  color: #987e87 !important;
+
+  text-align: center;
+}
+
+
+.footer-bottom > a {
+  text-align: right;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.footer-bottom > a:hover {
+  color: #d7a0b1;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .footer-top {
+    grid-template-columns:
+      1.4fr
+      0.8fr
+      0.8fr;
+
+    gap: 50px;
+  }
+
+
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .salon-footer {
+    padding: 80px 0 25px;
+  }
+
+
+  .footer-container {
+    width: min(92%, 560px);
+  }
+
+
+  .footer-top {
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 50px 35px;
+
+    padding-bottom: 60px;
+  }
+
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+
+  .footer-brand-name {
+    font-size: 34px;
+  }
+
+
+  .footer-brand p {
+    margin-top: 22px;
+  }
+
+
+  .footer-big-brand {
+    padding:
+      38px 0 40px;
+
+    overflow: hidden;
+  }
+
+
+  .footer-big-brand span {
+    font-size: 14vw;
+  }
+
+
+  .footer-big-brand em {
+    font-size: 6vw;
+  }
+
+
+  .footer-bottom {
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 20px;
+  }
+
+
+  .footer-center-text {
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    text-align: center;
+
+    order: -1;
+  }
+
+
+  .footer-bottom > span:first-child {
+    grid-column: 1;
+  }
+
+
+  .footer-bottom > a {
+    grid-column: 2;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .salon-footer {
+    padding: 70px 0 22px;
+  }
+
+
+  .footer-top {
+    gap: 42px 22px;
+  }
+
+
+  .footer-brand-name {
+    font-size: 30px;
+  }
+
+
+  .footer-brand-sub {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .footer-label {
+    font-size: 6px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .footer-links {
+    gap: 11px;
+  }
+
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+
+  .footer-phone {
+    font-size: 19px;
+  }
+
+
+  .footer-email {
+    font-size: 9px;
+  }
+
+
+  .footer-whatsapp {
+    font-size: 6px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .footer-big-brand {
+    gap: 7px;
+  }
+
+
+  .footer-big-brand span {
+    font-size: 13vw;
+
+    letter-spacing: -2px;
+  }
+
+
+  .footer-big-brand em {
+    font-size: 6vw;
+  }
+
+
+  .footer-bottom > span,
+  .footer-bottom > a {
+    font-size: 5px;
+
+    letter-spacing: 1px;
+  }
+
+}

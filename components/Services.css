@@ -1,0 +1,1349 @@
+/* =========================================================
+   ARJUMAND'S PTV SALON
+   PREMIUM SERVICES SECTION
+   SOFT PINK • CREAM • EDITORIAL LUXURY
+========================================================= */
+
+.services {
+  position: relative;
+  overflow: hidden;
+
+  padding: 155px 0 130px;
+
+  background:
+    radial-gradient(
+      circle at 82% 8%,
+      rgba(224, 180, 193, 0.28),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #fdf9f6 0%,
+      #fbf4f2 52%,
+      #f8eaed 100%
+    );
+
+  color: #39282e;
+
+  font-family:
+    "DM Sans",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+========================================================= */
+
+.services-bg-shape {
+  position: absolute;
+
+  pointer-events: none;
+
+  opacity: 0.55;
+}
+
+.services-bg-one {
+  width: 360px;
+  height: 540px;
+
+  top: 520px;
+  left: -250px;
+
+  background: #f1d9df;
+
+  border-radius:
+    55% 45% 65% 35% /
+    40% 55% 45% 60%;
+
+  transform: rotate(25deg);
+}
+
+.services-bg-two {
+  width: 320px;
+  height: 500px;
+
+  right: -240px;
+  top: 1750px;
+
+  background: #efd5dc;
+
+  border-radius:
+    45% 55% 40% 60% /
+    55% 40% 60% 45%;
+
+  transform: rotate(-25deg);
+}
+
+.services-bg-circle {
+  position: absolute;
+
+  width: 145px;
+  height: 145px;
+
+  top: 330px;
+  right: 6%;
+
+  border:
+    1px solid
+    rgba(163, 93, 115, 0.18);
+
+  border-radius: 50%;
+}
+
+.services-bg-circle::after {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  right: 12px;
+  bottom: 25px;
+
+  border-radius: 50%;
+
+  background: #b87991;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.services-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1220px, 90%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.services-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 80px;
+
+  margin-bottom: 125px;
+}
+
+.services-title {
+  position: relative;
+}
+
+.services-eyebrow {
+  display: block;
+
+  margin-bottom: 27px;
+
+  color: #a05d73;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.services-title h2 {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  color: #38282e;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(82px, 9vw, 128px);
+
+  font-weight: 400;
+
+  line-height: 0.76;
+
+  letter-spacing: -6px;
+}
+
+.services-title h2 em {
+  margin-left: 105px;
+
+  color: #a35d73;
+
+  font-size:
+    clamp(68px, 7.7vw, 108px);
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.services-introduction {
+  width: 290px;
+
+  padding-bottom: 6px;
+}
+
+.intro-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #bd8e7b;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.services-introduction p {
+  margin: 0;
+
+  color: #75656c;
+
+  font-size: 12px;
+
+  line-height: 1.9;
+}
+
+.intro-line {
+  position: relative;
+
+  width: 75px;
+  height: 1px;
+
+  margin-top: 26px;
+
+  background: #d6b5aa;
+}
+
+.intro-line::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: -1px;
+
+  width: 32px;
+  height: 2px;
+
+  background: #a35d73;
+}
+
+
+/* =========================================================
+   SERVICES CONTENT
+========================================================= */
+
+.services-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 155px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+  display: grid;
+
+  grid-template-columns:
+    minmax(440px, 1fr)
+    minmax(330px, 0.78fr);
+
+  align-items: center;
+
+  gap: 110px;
+}
+
+
+/* REVERSED CARD */
+
+.service-card.right {
+  grid-template-columns:
+    minmax(330px, 0.78fr)
+    minmax(440px, 1fr);
+}
+
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.service-visual {
+  position: relative;
+
+  min-height: 530px;
+}
+
+.service-card.right .service-visual {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
+/* =========================================================
+   ORGANIC PINK SHAPE
+========================================================= */
+
+.visual-pink-shape {
+  position: absolute;
+
+  width: 405px;
+  height: 485px;
+
+  top: 25px;
+  left: 50px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f0d0d8,
+      #e5b8c5
+    );
+
+  border-radius:
+    53% 47% 60% 40% /
+    42% 55% 45% 58%;
+
+  transform: rotate(-8deg);
+
+  transition:
+    transform 0.7s ease;
+}
+
+.service-card.right .visual-pink-shape {
+  left: auto;
+  right: 50px;
+
+  transform: rotate(8deg);
+}
+
+
+/* HOVER */
+
+.service-card:hover .visual-pink-shape {
+  transform:
+    rotate(-4deg)
+    scale(1.025);
+}
+
+.service-card.right:hover .visual-pink-shape {
+  transform:
+    rotate(4deg)
+    scale(1.025);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.service-image-frame {
+  position: absolute;
+
+  z-index: 2;
+
+  width: 375px;
+  height: 460px;
+
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  background: #ead7dc;
+
+  border-radius:
+    48% 52% 10% 10% /
+    38% 42% 58% 62%;
+
+  box-shadow:
+    0 32px 70px
+    rgba(78, 43, 57, 0.16);
+}
+
+.service-card.right .service-image-frame {
+  left: auto;
+  right: 0;
+}
+
+.service-image-frame img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 1s
+    cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.service-card:hover .service-image-frame img {
+  transform: scale(1.055);
+}
+
+
+/* =========================================================
+   IMAGE SHINE
+========================================================= */
+
+.service-image-frame::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03),
+      transparent 55%,
+      rgba(46, 18, 29, 0.18)
+    );
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.visual-number {
+  position: absolute;
+
+  z-index: 6;
+
+  top: 32px;
+  right: 2px;
+
+  width: 67px;
+  height: 67px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fffaf8;
+
+  color: #a35d73;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 18px;
+
+  font-style: italic;
+
+  box-shadow:
+    0 16px 35px
+    rgba(77, 44, 57, 0.1);
+}
+
+.service-card.right .visual-number {
+  right: auto;
+  left: 2px;
+}
+
+
+/* =========================================================
+   SMALL CIRCLE
+========================================================= */
+
+.visual-small-circle {
+  position: absolute;
+
+  z-index: 4;
+
+  right: 8px;
+  bottom: 48px;
+
+  width: 112px;
+  height: 112px;
+
+  border:
+    1px solid
+    rgba(163, 93, 115, 0.35);
+
+  border-radius: 50%;
+}
+
+.visual-small-circle::after {
+  content: "✦";
+
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #a35d73;
+
+  font-size: 14px;
+
+  opacity: 0.7;
+}
+
+.service-card.right .visual-small-circle {
+  right: auto;
+  left: 8px;
+}
+
+
+/* =========================================================
+   VISUAL CAPTION
+========================================================= */
+
+.visual-caption {
+  position: absolute;
+
+  z-index: 7;
+
+  left: 32px;
+  bottom: 27px;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 2px 12px
+    rgba(0, 0, 0, 0.3);
+}
+
+.service-card.right .visual-caption {
+  left: auto;
+  right: 32px;
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.service-information {
+  max-width: 470px;
+}
+
+.service-category {
+  display: block;
+
+  margin-bottom: 21px;
+
+  color: #a45f75;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.7px;
+}
+
+.service-information h3 {
+  margin: 0;
+
+  color: #39282e;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(55px, 5vw, 80px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -3.5px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.service-divider {
+  position: relative;
+
+  width: 75px;
+  height: 1px;
+
+  margin: 31px 0;
+
+  background: #d8bbb1;
+}
+
+.service-divider::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: -1px;
+
+  width: 30px;
+  height: 2px;
+
+  background: #a35d73;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.service-description {
+  max-width: 405px;
+
+  margin: 0;
+
+  color: #75666c;
+
+  font-size: 12px;
+
+  line-height: 2;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   DETAIL
+========================================================= */
+
+.service-detail {
+  margin: 25px 0 30px;
+
+  color: #aa8d95;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   SERVICE BUTTON
+========================================================= */
+
+.service-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 13px 0;
+
+  color: #754457;
+
+  text-decoration: none;
+
+  border-bottom:
+    1px solid
+    rgba(165, 94, 118, 0.4);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+
+  transition:
+    color 0.3s ease;
+}
+
+.service-button b {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(165, 94, 118, 0.32);
+
+  border-radius: 50%;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+.service-button:hover {
+  color: #a35d73;
+}
+
+.service-button:hover b {
+  transform: rotate(45deg);
+
+  color: #ffffff;
+
+  background: #a35d73;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.services-cta {
+  position: relative;
+
+  min-height: 255px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-top: 155px;
+
+  padding: 55px 70px;
+
+  overflow: hidden;
+
+  border-radius:
+    115px
+    14px
+    115px
+    14px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #f1dce1,
+      #edd1d9
+    );
+
+  box-shadow:
+    0 25px 70px
+    rgba(105, 57, 75, 0.07);
+}
+
+
+/* CTA DECORATION */
+
+.cta-shape {
+  position: absolute;
+
+  width: 330px;
+  height: 330px;
+
+  right: 170px;
+  top: -145px;
+
+  border:
+    1px solid
+    rgba(145, 79, 99, 0.18);
+
+  border-radius: 50%;
+}
+
+.cta-shape::after {
+  content: "";
+
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+
+  left: 80px;
+  top: 80px;
+
+  border:
+    1px solid
+    rgba(145, 79, 99, 0.12);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.cta-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+.cta-content > span {
+  display: block;
+
+  margin-bottom: 17px;
+
+  color: #9b6173;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.4px;
+}
+
+.cta-content h3 {
+  margin: 0;
+
+  color: #4a3039;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(40px, 4vw, 60px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+}
+
+.cta-content h3 em {
+  display: block;
+
+  color: #9d526c;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.services-cta > a {
+  position: relative;
+
+  z-index: 2;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  padding: 17px 24px;
+
+  color: #ffffff;
+
+  background: #9f5b72;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  box-shadow:
+    0 16px 35px
+    rgba(116, 58, 79, 0.18);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.services-cta > a:hover {
+  transform: translateY(-4px);
+
+  background: #8f4e65;
+}
+
+.services-cta > a span {
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .services-container {
+    width: min(92%, 1000px);
+  }
+
+  .services-header {
+    gap: 50px;
+  }
+
+  .service-card,
+  .service-card.right {
+    grid-template-columns:
+      minmax(360px, 1fr)
+      minmax(290px, 0.8fr);
+
+    gap: 65px;
+  }
+
+  .service-visual {
+    min-height: 470px;
+  }
+
+  .visual-pink-shape {
+    width: 350px;
+    height: 430px;
+
+    left: 35px;
+  }
+
+  .service-card.right .visual-pink-shape {
+    right: 35px;
+  }
+
+  .service-image-frame {
+    width: 325px;
+    height: 405px;
+  }
+
+  .service-information h3 {
+    font-size: 62px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .services {
+    padding: 120px 0 100px;
+  }
+
+  .services-header {
+    margin-bottom: 90px;
+  }
+
+  .services-title h2 {
+    font-size: 82px;
+  }
+
+  .services-title h2 em {
+    margin-left: 65px;
+    font-size: 70px;
+  }
+
+  .services-introduction {
+    width: 240px;
+  }
+
+  .service-card,
+  .service-card.right {
+    grid-template-columns:
+      minmax(300px, 1fr)
+      minmax(250px, 0.8fr);
+
+    gap: 45px;
+  }
+
+  .visual-pink-shape {
+    width: 300px;
+    height: 390px;
+  }
+
+  .service-image-frame {
+    width: 285px;
+    height: 370px;
+  }
+
+  .service-visual {
+    min-height: 420px;
+  }
+
+  .service-information h3 {
+    font-size: 54px;
+  }
+
+  .services-cta {
+    padding: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .services {
+    padding: 95px 0 85px;
+  }
+
+  .services-container {
+    width: 90%;
+  }
+
+
+  /* HEADER */
+
+  .services-header {
+    display: block;
+
+    margin-bottom: 75px;
+  }
+
+  .services-eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 8px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .services-title h2 {
+    font-size:
+      clamp(64px, 18vw, 82px);
+
+    line-height: 0.78;
+
+    letter-spacing: -4px;
+  }
+
+  .services-title h2 em {
+    margin-left: 40px;
+
+    font-size:
+      clamp(55px, 15vw, 70px);
+  }
+
+  .services-introduction {
+    width: 100%;
+
+    max-width: 330px;
+
+    margin-top: 38px;
+  }
+
+  .services-introduction p {
+    font-size: 11px;
+  }
+
+
+  /* SERVICES */
+
+  .services-content {
+    gap: 105px;
+  }
+
+  .service-card,
+  .service-card.right {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+
+    align-items: stretch;
+  }
+
+
+  /* VISUAL */
+
+  .service-visual,
+  .service-card.right .service-visual {
+    width: 100%;
+
+    min-height: 440px;
+
+    order: 1;
+  }
+
+  .visual-pink-shape {
+    width: 84%;
+    height: 410px;
+
+    left: 8%;
+    top: 20px;
+  }
+
+  .service-card.right .visual-pink-shape {
+    right: 8%;
+    left: auto;
+  }
+
+  .service-image-frame,
+  .service-card.right .service-image-frame {
+    width: 79%;
+    height: 395px;
+
+    left: 0;
+    right: auto;
+  }
+
+  .service-card.right .service-image-frame {
+    left: auto;
+    right: 0;
+  }
+
+
+  /* NUMBER */
+
+  .visual-number {
+    width: 58px;
+    height: 58px;
+
+    top: 25px;
+    right: 1%;
+  }
+
+  .service-card.right .visual-number {
+    left: 1%;
+    right: auto;
+  }
+
+
+  /* CIRCLE */
+
+  .visual-small-circle {
+    width: 92px;
+    height: 92px;
+
+    right: 0;
+    bottom: 38px;
+  }
+
+  .service-card.right .visual-small-circle {
+    left: 0;
+    right: auto;
+  }
+
+
+  /* CAPTION */
+
+  .visual-caption {
+    left: 24px;
+    bottom: 24px;
+
+    font-size: 7px;
+  }
+
+  .service-card.right .visual-caption {
+    right: 24px;
+    left: auto;
+  }
+
+
+  /* INFORMATION */
+
+  .service-information,
+  .service-card.right .service-information {
+    width: 100%;
+
+    max-width: none;
+
+    order: 2;
+  }
+
+  .service-category {
+    font-size: 7px;
+
+    letter-spacing: 2.2px;
+  }
+
+  .service-information h3 {
+    font-size:
+      clamp(48px, 13vw, 62px);
+
+    letter-spacing: -2.5px;
+  }
+
+  .service-description {
+    max-width: 100%;
+
+    font-size: 11px;
+
+    line-height: 1.9;
+  }
+
+  .service-detail {
+    font-size: 8px;
+  }
+
+
+  /* CTA */
+
+  .services-cta {
+    display: block;
+
+    min-height: auto;
+
+    margin-top: 105px;
+
+    padding: 45px 30px;
+
+    border-radius:
+      70px
+      10px
+      70px
+      10px;
+  }
+
+  .cta-content h3 {
+    font-size: 42px;
+  }
+
+  .services-cta > a {
+    margin-top: 32px;
+
+    padding: 15px 21px;
+  }
+
+  .cta-shape {
+    right: -90px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .services {
+    padding-top: 80px;
+  }
+
+  .services-title h2 {
+    font-size: 60px;
+  }
+
+  .services-title h2 em {
+    margin-left: 30px;
+
+    font-size: 53px;
+  }
+
+  .services-content {
+    gap: 90px;
+  }
+
+  .service-visual {
+    min-height: 395px;
+  }
+
+  .visual-pink-shape {
+    height: 365px;
+  }
+
+  .service-image-frame {
+    height: 350px;
+  }
+
+  .visual-number {
+    width: 52px;
+    height: 52px;
+
+    font-size: 15px;
+  }
+
+  .visual-small-circle {
+    width: 78px;
+    height: 78px;
+  }
+
+  .service-information h3 {
+    font-size: 47px;
+
+    letter-spacing: -2px;
+  }
+
+  .service-description {
+    font-size: 10.5px;
+  }
+
+  .services-cta {
+    padding: 38px 25px;
+  }
+
+  .cta-content h3 {
+    font-size: 36px;
+  }
+
+  .services-cta > a {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
